@@ -5,6 +5,7 @@ header {
     
 }
 
+
 nav ul {
     list-style: none;
     display: flex;
@@ -19,14 +20,13 @@ nav ul {
     }
     
 .intro{
-    text-align: center;
     color:var(--color-primary);
     font-size: 2em;
     padding: 10px;
-    margin-left: 10%;
+    margin: 0;
     font-family: sans-serif;
     width: 100%;
-    justify-content: center;
+    
 
 }
  
@@ -44,8 +44,9 @@ justify-content: center;
 
 }
 
+/* Actual code */
 
- 
+
 img {
 max-width: 100%;
 }
@@ -67,11 +68,27 @@ color: var(--color-secondary);
     align-items: center;
 }
 
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.subtext {
+    font-size: 1.2em;
+    color: var(--color-secondary);
+    margin-top: 0.5rem;
+}
+
+.highlight {
+    color: var(--color-accent);
+}
+
 :root {
     --color-primary: hsl(221, 50%, 90%);
     --color-secondary: hsl(221, 50%, 10%);
     --color-tertiary: hsl(281, 80%, 20%);
     --color-accent: hsl(161, 80%, 20%);
+    --transition: 0.3s ease-in-out;
 }
 .dark {
     --color-primary: hsl(221, 50%, 10%);
@@ -79,3 +96,63 @@ color: var(--color-secondary);
     --color-tertiary: hsl(281, 80%, 80%);
     --color-accent: hsl(161, 80%, 80%);
 }
+
+.dark{
+    color: var(--color-tertiary);
+}
+
+
+/* Repeating code */
+.buttons > *{
+  cursor: pointer;
+  background: var(--color-secondary);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--color-primary);
+  transition: var(--transition);
+  }
+.buttons > *:hover{
+  transition: var(--transition);
+  }
+
+
+
+/* dashing */
+.dashing{
+  background: linear-gradient(var(--color-secondary), var(--color-secondary)) padding-box,
+    linear-gradient(45deg, var(--color-primary) 0%, var(--color-tertiary) 100%) border-box;
+  border: solid 2px transparent;
+}
+.dashing:hover {
+  border: solid 2px var(--color-primary);
+}
+
+.dashing-fill{
+  color: var(--color-secondary);
+  background: linear-gradient(
+    270deg,
+    var(--color-primary),
+    var(--color-tertiary),
+    var(--color-primary),
+    var(--color-tertiary),
+  );
+ 
+  animation: bg .10s ease-in-out infinite;
+}@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.dashing-fill:hover {
+  animation: bg 2s ease-in-out infinite;
+}
+
+
+
