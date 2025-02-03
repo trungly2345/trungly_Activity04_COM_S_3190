@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="trungly_Activity04_css.css">
+
     <title>Document</title>
     <style>
         .container {
@@ -17,56 +18,61 @@
         padding: 20px;
         }
         </style>
+
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
             </nav>
     </header>
-    <section id ="about">
-        <div class="container">
-           <img src="me.jpeg" alt="profile" width="200px" style="border-color: black;">
-           <h1>Trung Ly</h1>
-           <p>Computer Science Student</p>
-           <p>I am a student at Iowa State studying Computer Science. This semester I am taking 319 to learn more about 
-            web development. I am excited to learn more about web development and how to create websites. I am also excited to learn more about
-            mobile app development as well! Currently I am doing a internship that is related to web development and app development. 
-           </p>
+
+    
+    <section id ="home">
+        <div class="container display" style= "display: flex;">
+                <img src="me.jpeg" class="card-img-top" alt="me" style="border-radius: 60%; width: 400px;">
+                <h class="intro"> Hello nice to see you here! I'm Trung, an aspiring <h class= "intro" style="color: var(--color-accent); justify-content: center; font-size: 1.5em;">Software Developer</h>
+                <br> 
+                <br>
+                Intereseted in Full-stack development and Mobile App developement.
+             </h>
+              </div>
+        <div class ="container display" style="display: flex; flex-direction: column;">
+
         </div>
     </section>
 
+      
+    <section id ="about">
+        <div class="container display" style= "display: flex;">
+            <h1>About Me</h1>
+               
+    </section>
+
+
+
     <section id="Skills">
-        <div class="container">
+        <div class="container display">
         <h1>Skills</h1>
-        <p >Programming Languages
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>HTML/CSS</li>
-            </ul>
-        </p>
-        <p>Software
-            <ul>
-                <li>Visual Studio Code</li>
-                <li>IntelliJ</li>
-                <li>PyCharm</li>
-                <li>Android Studio</li>
-            </ul>
+        <img src="java-svgrepo-com (2).svg" alt="Java programming" width="50" height="50">
+        <img src="python-127-svgrepo-com.svg" alt="Python programming" width="50" height="50">
+        <img src="c-svgrepo-com.svg" alt="C programming" width="50" height="50">
+        <img src="typescript-svgrepo-com.svg" alt="Typescript programming" width="50" height="50">
+        <img src="javascript-16-svgrepo-com.svg" alt="Javascript programming" width="50" height="50">
+        
     </div>
     </section>
 
     <section id="projects">
         <div class="container">
         <h2> Portfolio Site</h2>
-        <p class="bio"> This is a project I work for using HTML/CSS only for my class, I created a header navigation that consists About me section 
+        <p class="project-text">This is a project I work for using HTML/CSS only for my class, I created a header navigation that consists About me section 
             Projects and Contact. I also created a section for each of the navigation. 
             Here you can look at skills I have and my contact information if you have any questions.
         </p>
@@ -74,7 +80,7 @@
     </section>
 
     <section id="contact">
-        <div class="container cen"> <h2>Contact me</h2>You can contact me at trungly@iastate.edu </div>
+        <div class="container center"> <h2>Contact me</h2>You can contact me at trungly@iastate.edu </div>
     </section>
 
     <footer>
