@@ -1,7 +1,8 @@
 header {
     background-color: var(--color-primary);
-    padding: 10px 0;
-    color: var(--color-accent);
+    padding: 5px 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     
 }
 
@@ -16,7 +17,7 @@ nav ul {
     }
     nav a {
     text-decoration: none;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     }
     
 .intro{
@@ -157,3 +158,37 @@ color: var(--color-secondary);
   animation: bg 2s ease-in-out infinite;
 }
 
+.tech.js {
+  background-image: linear-gradient(to right, var(--color-secondary), var(--color-accent),var(--color-primary));
+  box-shadow: 0 4px 15px 0px var(--color-accent);
+}
+
+.tech.python {
+  background-image: linear-gradient(to right, var(--color-secondary), hsl(281, 80%, 80%),var(--color-primary));
+  box-shadow: 0 4px 15px 0 #2e336e;
+}
+
+.tech.java {
+  background-image: linear-gradient(to right, var(--color-secondary), hsl(281, 80%, 80%),var(--color-primary));
+  box-shadow: 0 4px 15px 0 #2e336e;
+}
+
+.tech{
+  background-size: 300% 100%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.tech:focus{
+  outline:none;
+}
+
+.tech:hover {
+  background-position: 100%;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
