@@ -101,6 +101,9 @@ color: var(--color-secondary);
     color: var(--color-tertiary);
 }
 
+.portfolio-heading{
+    font-weight: bold;
+}
 
 /* Repeating code */
 .buttons > *{
@@ -153,6 +156,4 @@ color: var(--color-secondary);
 .dashing-fill:hover {
   animation: bg 2s ease-in-out infinite;
 }
-
-
 
