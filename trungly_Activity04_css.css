@@ -9,9 +9,7 @@ header {
 .home{
   padding: auto;
 }
-.title p{
-  
-}
+
 .timeline {
   margin: 5em auto;
   max-width: 34.15em;
@@ -35,7 +33,7 @@ nav ul {
 .intro{
     color:var(--color-primary);
     font-size: 2em;
-    padding: 5px;
+    padding: .5em;
     margin: 0;
     font-family: sans-serif;
     width: 100%;
@@ -43,11 +41,38 @@ nav ul {
 
 }
 
+
 .workExpHeader {
   border-bottom: hsl(161, 80%, 80%) 2px solid;
-  padding: 1em;
-  padding-top: 30%;
+  padding-top: 40%;
+  padding: .5em;
 }
+
+.ProjectHeader {
+  border-bottom: hsl(161, 80%, 80%) 2px solid;
+  padding-top: 40%;
+  padding: .5em;
+}
+
+.AboutMeHeader {
+  border-bottom: hsl(161, 80%, 80%) 2px solid;
+  padding-top: 50%;
+  padding: .5em;
+}
+
+.SkillsHeader {
+  border-bottom: hsl(161, 80%, 80%) 2px solid;
+  padding-top: 40%;
+  padding: .5em;
+}
+
+.aboutMe{
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+
 
  
 body {
@@ -126,11 +151,12 @@ color: var(--color-secondary);
   background: var(--color-secondary);
   color: var(--color-primary);
   transition: var(--transition);
-  background: linear-gradient(var(--color-secondary), var(--color-secondary)) padding-box,
-  linear-gradient(45deg, var(--color-primary) 0%, var(--color-tertiary) 100%) border-box;
-  border: solid 2px transparent;
-  width: 100%;
+  border: solid 2px hsl(161, 80%, 80%);
+  width: 90%;
   display: block;
+  border-radius: 1em;
+  max-width: 34.13em;
+  
 
 }
 /* Repeating code */
@@ -151,6 +177,11 @@ color: var(--color-secondary);
   .two-columns-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.divider{
+  width: 5px;
+  display: inline-block;
 }
 
 /* columns */
@@ -234,15 +265,17 @@ color: var(--color-secondary);
 
 
 .tech{
-
-
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 2em;
   padding: 10px;
   background-size: 300% 100%;
   -moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
+  justify-content: space-around;
   
 }
 
@@ -308,6 +341,7 @@ color: var(--color-secondary);
   border-left: 3px solid hsl(161, 80%, 80%);
   padding-left: 3em;
   transform:translateX(17em);
+  
 }
 
 .checkpoint:nth-child(even){
@@ -336,9 +370,10 @@ color: var(--color-secondary);
 }
 
 .checkpoint:nth-child(odd)::before{
-  left: 0;
+  left: 0em;
 }
 
 .checkpoint:nth-child(even)::before{
   right: -0em;
 }
+
