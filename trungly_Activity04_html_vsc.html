@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trungly_Activity04_css.css">
-     <script src="https://kit.fontawesome.com/8d48c4a151.js">
-
-     </script>
-
+    
+     
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="trungly_Activity04_css.css">
+    
+     <script src="https://kit.fontawesome.com/8d48c4a151.js"></script>
     <style>
         .container {
         max-width: 960px;
@@ -36,10 +37,10 @@
         </nav>
     </header>
 
-    
+   
     <section id ="home">
         <div class="container" style="justify-content: center; text-align: center;">
-            <img src="me.jpeg" alt="me" style="border-radius: 60%; width: 40%;">
+                <img src="me.jpeg" alt="me" style="border-radius: 60%; width: 50%;">
             <section class="hero">
                 <h1 class="intro">Hello! I'm Trung, an aspiring <span class="dark">Software Developer.</span></h1>
                 <p class="intro">Interested in Full-Stack Development and Mobile App Development Internships.</p>
@@ -52,46 +53,80 @@
               </div>
     </section>
 
-      
+    <section id ="about"></section>
+    <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="container text-center">
+                    <div class="col">
+                        <h1>About Me</h1>
+                        <p>I am a first-generation Vietnamese student in my senior year Computer Science at Iowa State University. Seeking an internship to enhance my skills in software development and broader computer science roles.
+                            <br>
+                            <br>Passionate about technology's role in shaping society, I aim to contribute to innovations that improve everyday life. Let's connect to explore how I can bring my skills and enthusiasm to a dynamic team.
+                        </p>
+          </div>
+        </div>
+      </div>
 
+   
+        <div class="col">
+        <div class="container center" style="justify-content: center;">
+        <h1>Technical Skills</h1>
+        <div class="tech"> 
+        <button class="tech react"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-react"></i></button>
+        <button class="tech html"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-html5"></i></button>
+        <button class="tech css"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-css3-alt"></i></button>
+        <button class="tech js"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-js"></i></button>
+        <button class="tech python"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-python"></i></button>
+        <button class="tech java"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-java"></i></button>
+        <button class="tech docker"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-docker"></i></button>
+    </div>
+    </div>
+</div>
+   
+</div>
+</div>
 
 
     
-    <section id ="about">
-        <div class="container" style= "justify-content: center;">
-            <h1>About Me</h1>
-            <p>I'm a first generation Computer Science student at Iowa State University with an expected graduation date Fall of 2025. I'm passionate about learning new technologies and building web applications and creating a user-friendly experience. 
-                As I progress into my journey of Software Development, I'm looking forward to push myself and improve in my skills in Software Development.
-            </p>
-            
-    </section>
+    
 
-    <section id="Skills">
-        <div class="container display">
-        <h1>Skills</h1>
+    <section id = "work">
+        <div class="container center">
+
+                <h1 class="workExpHeader">Work Experience</h1>
+            </div>
         
-        <button class="tech js"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-js"></i></button><br>
-        <button class="tech python"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-python"></i></button>
-        <button class="tech java"><i style="font-size: 80px; color: var(--color-secondary);" class="fa-brands fa-java"></i></button>
-    </div>
-    </section>
-
-    <section id = "Work Experience">
-        <div class="container">
-            <h1>Work Experience</h1>
-            <p style="justify-content: center;">In August 2024, I began my first internsip at National Carwash Solution working on mobile app and 
-                web app. I was responsible for maintaining the codebase and bug fixes on the front-end. I worked in a team the consists of 
-                4 developers and 1 graphic designer that is lead by a product owner in Agile environment.
-                <br>
-                <br>
-                During my internship, I learned how to work in a team with other developers. I was fortunate enough to be mentored by a Software developer that helped me grow as a developer and improve my front-end skills. 
-                I also learned how to use Jira and Slack messagin application to keep track of my work and communicate with my team.
-            </p>
+            <div class="timeline">
+                <div class="checkpoint">
+                <div>
+                    <h1>Software Developer Intern Part-time</h1>
+                    <p>National Carwash Solutions | Jan 2025 - Present</p>
+                    <ul>
+                        <li>• Implemented user activities tracking on Google Analytics via Firebase for mobile app.</li>
+                        <li>• Filtered out user types on Typescript React Native to enhance user experience.</li>
+                        <li>• Contributed to data analysis for improved user engagement.
+                    </ul>
+                </div>
+                </div>
+                <div class="checkpoint">
+                <div>
+                    <h1>Software Developer Intern</h1>
+                    <p>National Carwash Solutions | August 2024 - December 2024</p>
+                    <ul>
+                        <li>• Maintained and improved a legacy Java-based application, resolving bugs like timezone discrepancies in user activity logs.</li>
+                        <li>• Managed web app dependencies during migration from Apache Ant to Maven, focusing on evaluation and configuration.</li>
+                        <li>•  Designed and implemented a login bypass feature for developers, enhancing development efficiency with quicker access. </li>
+                    </ul>
+                  </div>
+                  
         </div>
+        
+        
     </section>
 
     <section id="projects">
-        <div class="container">
+        <div class="container center">
         <h2>Projects</h2>
         <p class="project-text style=">
             <p class="portfolio-heading">Personal Portfolio</p>
@@ -110,6 +145,9 @@
             <a class="credit" href="https://www.iamsajid.com/">Sajid</a>
         </div>
     </section>
+
+
+    
    
     
 
