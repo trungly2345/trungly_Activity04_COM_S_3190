@@ -7,7 +7,9 @@ header {
 
 .home{
   padding: auto;
+
 }
+
 
 .timeline {
   margin: 5em auto;
@@ -15,6 +17,15 @@ header {
   
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 50%;
+  gap: 40px;
+}
 
 nav ul {
     list-style: none;
@@ -35,11 +46,22 @@ nav ul {
     color:var(--color-primary);
     font-size: 2em;
     padding: .5em;
-    margin: 0;
+   
     font-family: sans-serif;
     width: 100%;
 
 
+}
+
+.paragraph{
+  color:var(--color-primary);
+  font-size: 1.2em;
+  padding: .5em;
+  flex-wrap: wrap;
+  display: flex;
+  font-family: sans-serif;
+  width: 100%;
+  padding-left: .8em;
 }
 
 
@@ -68,6 +90,7 @@ nav ul {
 }
 
 .aboutMe{
+  padding-left: 50%;
   padding: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +113,6 @@ justify-content: center;
 
 .img {
 max-width: 100%;
-
 }
 
 footer {
@@ -111,8 +133,11 @@ color: var(--color-secondary);
 }
 
 .hero {
-    text-align: center;
     padding: 4rem 2rem;
+    flex-wrap:wrap;
+    padding-top: 10%;
+    padding-bottom: 30%;
+  
 }
 
 .subtext {
@@ -151,6 +176,7 @@ color: var(--color-secondary);
 
 
 .Card {
+
   color: var(--color-primary);
   width: 90%;
   display: block;
@@ -166,11 +192,12 @@ color: var(--color-secondary);
   cursor: pointer;
   background: var(--color-secondary);
   text-decoration: none;
-  gap: 20px;
   padding: 12px 20px;
   border-radius: 8px;
   color: var(--color-primary);
   transition: var(--transition);
+  justify-content: left;
+
   }
 
 .buttons > *:hover{
@@ -404,6 +431,18 @@ color: var(--color-secondary);
 }
 
 @media screen and (max-width: 860px) {
+
+  .column{
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .img{
+    width: 70vw;
+  }
   .timeline{
     width: 80vw;
   }
