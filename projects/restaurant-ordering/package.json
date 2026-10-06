@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-ordering-backend",
+  "version": "1.0.0",
+  "description": "Full-stack Restaurant Ordering API with Node.js, Express, and MongoDB",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
