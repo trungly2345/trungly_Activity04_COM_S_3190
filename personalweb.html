@@ -17,13 +17,13 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#experience">Experience</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -42,7 +42,7 @@
                    
                 </p>
                 <div class="hero-buttons">
-                    <a href="/Users/trungquocly/PersonalWebsite/ResumeNGSWE2027pdf" download="TrungLResumeNewGrad2027.pdf" class="dashing"><i class="fa-solid fa-code"></i>Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1VAsha45kWQ7dR8Y3d2PAyXFqPUnESgDR/view?usp=sharing" onclick="window.location.href='/ResumeNGSWE2027pdf'" class="dashing"><i class="fa-solid fa-code"></i>Download Resume</a>
                     <a href="https://linkedin.com/in/trung-ly-30151b184" target="_blank" class="btn btn-code"><i
                             class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 </div>
@@ -213,5 +213,21 @@
 
 
 </body>
+
+<script>    
+// Source - https://stackoverflow.com/a/49917066
+// Posted by Stefanos Chrs, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-10-07, License - CC BY-SA 4.0
+
+function download(url) {
+  const a = document.createElement('a')
+  a.href = url
+  a.download = url.split('/').pop()
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
+
+</script>
 
 </html>
