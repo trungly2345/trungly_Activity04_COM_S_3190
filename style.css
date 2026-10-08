@@ -148,9 +148,11 @@ nav a:hover, nav a.active {
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    border: 4px solid var(--primary);
+
+    background: linear-gradient(120deg, var(--primary), var(--secondary));
     box-shadow: 0 0 30px color-mix(in srgb, var(--primary) 30%, transparent), 0 0 50px color-mix(in srgb, var(--secondary) 15%, transparent);
     transition: var(--transition);
+    
 }
 
 .hero-avatar:hover {
@@ -214,7 +216,9 @@ nav a:hover, nav a.active {
 }
 
 .dark-text {
-    color: var(--primary);
+    background: linear-gradient(30deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dashing {
@@ -246,7 +250,6 @@ nav a:hover, nav a.active {
     color: var(--text);
 }
 
-/* Timeline / Experience */
 .timeline {
   margin: 40px auto;
   max-width: 800px;
@@ -328,7 +331,6 @@ nav a:hover, nav a.active {
   font-weight: bold;
 }
 
-/* Projects Section & Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -419,7 +421,7 @@ nav a:hover, nav a.active {
     background: var(--border);
 }
 
-/* Modals for Live Demos */
+
 .demo-modal {
     display: none;
     position: fixed;
@@ -486,7 +488,7 @@ nav a:hover, nav a.active {
     color: var(--primary);
 }
 
-/* Custom Interactive UI Widgets */
+
 .interactive-panel {
     background: var(--bg-dark);
     border: 1px solid var(--border-muted);
@@ -523,7 +525,6 @@ nav a:hover, nav a.active {
     border-color: var(--primary);
 }
 
-/* Tabs */
 .tab-nav {
     display: flex;
     gap: 10px;
@@ -548,7 +549,7 @@ nav a:hover, nav a.active {
     border-bottom-color: var(--primary);
 }
 
-/* Menu Grid */
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -580,7 +581,6 @@ nav a:hover, nav a.active {
     margin-bottom: 12px;
 }
 
-/* Graph Canvas Container */
 .graph-canvas-container {
     position: relative;
     width: 100%;
@@ -745,5 +745,6 @@ footer {
 
 }
 
-    
-        
+
+
+
