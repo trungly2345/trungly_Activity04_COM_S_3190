@@ -659,7 +659,7 @@ svg.graph-svg {
 .contact-card {
     background: var(--bg-light);
     border: 1px solid var(--border-muted);
-    border-radius: 16px;
+    border-radius: 24px;
     padding: 24px;
     text-decoration: none;
     color: var(--text);
@@ -679,6 +679,7 @@ svg.graph-svg {
 .contact-card i {
     font-size: 2.2rem;
     color: var(--primary);
+
 }
 
 .contact-card h3 {
