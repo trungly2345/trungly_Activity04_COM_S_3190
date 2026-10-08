@@ -647,40 +647,8 @@ svg.graph-svg {
     text-anchor: middle;
 }
 
-.ws-log {
-    font-family: monospace;
-    background: var(--bg-dark);
-    border: 1px solid var(--border-muted);
-    color: var(--success);
-    padding: 10px;
-    border-radius: 8px;
-    max-height: 120px;
-    overflow-y: auto;
-    font-size: 0.85rem;
-}
 
-/* Technical Skills Badges */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 15px;
-}
 
-.skill-badge {
-    background: var(--bg-light);
-    border: 1px solid var(--border-muted);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-muted);
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Contact Grid */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -724,7 +692,7 @@ svg.graph-svg {
     color: var(--text-muted);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 24px;
@@ -745,6 +713,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
     .header {
         padding: 10px 20px;
     }
@@ -764,5 +733,17 @@ footer {
         gap: 10px;
     }
 
-    
+    nav ul {
+        gap: 12px;
+
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
 }
+
+    
+        
