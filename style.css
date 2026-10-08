@@ -740,4 +740,29 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
+
+  
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .navbar-collapse ul {
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    
 }
